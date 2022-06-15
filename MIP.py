@@ -1,9 +1,7 @@
 from ortools.linear_solver import pywraplp
-import cvrp
 
-def main():
-    cvrp.main()
-    route_map = cvrp.route_map_fun()
+
+def main():    
     # Create the mip solver with the SCIP backend.
     solver = pywraplp.Solver.CreateSolver('SCIP')
 
